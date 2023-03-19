@@ -1,0 +1,46 @@
+/* stylyzing the header */
+.header{
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 5px solid #f1f1f1;
+}
+
+/* stylizing the cards for the intro and the questions
+by default the cards are hidden and the intro is shown
+*/
+.card{
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 5px solid #f1f1f1;
+    display: none;
+}
+
+#intro{
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 5px solid #f1f1f1;
+    display: block;
+}
+
+#question1{
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 5px solid #f1f1f1;
+}

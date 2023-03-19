@@ -1,0 +1,12 @@
+when start is clicked,
+	a timer starts and a question is presented
+when question is answered
+	another question is shown
+when answered incorrectley
+	time is subrtacted form the clock
+when all questions are answered or timer reaches 0
+	game is over
+	allow to save initials and score
+
+comment all code
+include readme

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Coding Quiz</title>
+</head>
+<body>
+    <!-- creating header for the title -->
+    <header>
+        <div class="header">
+            <h1>Online Coding Quiz</h1>
+            <p id="timer"></p>
+        </div>
+    </header>
+
+    <!-- intro to quiz -->
+    <div class="card" id="intro">
+        <h2>Introduction</h2>
+        <p> This is a quiz to test your knowledge of HTML. </p>
+        <button id="start">Start Quiz</button>
+    </div>
+
+    <!-- question 1-->
+    <div class="card" id="question1">
+        <form method="post">
+            <h2>Question 1</h2>
+            <p>What is the correct HTML for adding a background color?</p>
+            <input type="radio" value="a" name="q1" class="q1answer"> <label for="a"> answer1 </label><br>
+            <input type="radio" value="b" name="q1" class="q1answer"> <label for="b"> answer2 </label><br>
+            <input type="radio" value="c" name="q1" class="q1answer" id="correct1"> <label for="c"> answer3 </label><br>
+            <input type="radio" value="d" name="q1" class="q1answer"> <label for="d"> answer4 </label><br>
+            <input type="submit" value="Submit" id="submit1" class="submit">
+        </form>
+    </div>
+
+    <!-- question 2 -->
+    <div class="card" id="question2">
+        <form method="post">
+            <h2>Question 2</h2>
+            <p>What is the correct HTML for adding a background color?</p>
+            <input type="radio" value="a" name="q2" class="q2answer" id="correct2">> <label for="a"> answer1 </label><br>
+            <input type="radio" value="b" name="q2" class="q2answer"> <label for="b"> answer2 </label><br>
+            <input type="radio" value="c" name="q2" class="q2answer"> <label for="c"> answer3 </label><br>
+            <input type="radio" value="d" name="q2" class="q2answer"> <label for="d"> answer4 </label><br>
+            <input type="submit" value="Submit" id="submit2" class="submit">
+        </form>
+    </div>
+
+    <!-- question 3 -->
+    <div class="card" id="question3">
+        <form method="post">
+            <h2>Question 3</h2>
+            <p>What is the correct HTML for adding a background color?</p>
+            <input type="radio" value="a" name="q3" class="q3answer"> <label for="a"> answer1 </label><br>
+            <input type="radio" value="b" name="q3" class="q3answer"> <label for="b"> answer2 </label><br>
+            <input type="radio" value="c" name="q3" class="q3answer"> <label for="c"> answer3 </label><br>
+            <input type="radio" value="d" name="q3" class="q3answer" id="correct3"> <label for="d"> answer4 </label><br>
+            <input type="submit" value="Submit" id="submit3" class="submit">
+        </form>
+    </div>
+
+    <!-- question 4 -->
+    <div class="card" id="question4"> 
+        <form method="post">
+            <h2>Question 4</h2>
+            <p>What is the correct HTML for adding a background color?</p>
+            <input type="radio" value="a" name="q4" class="q4answer"> <label for="a"> answer1 </label><br>
+            <input type="radio" value="b" name="q4" class="q4answer"> <label for="b"> answer2 </label><br>
+            <input type="radio" value="c" name="q4" class="q4answer" id="correct4"> <label for="c"> answer3 </label><br>
+            <input type="radio" value="d" name="q4" class="q4answer"> <label for="d"> answer4 </label><br>
+            <input type="submit" value="Submit" id="submit4" class="submit">
+        </form>
+    </div>
+
+    <!-- question 5 -->
+    <div class="card" id="question5">
+        <form method="post">
+            <h2>Question 5</h2>
+            <p>What is the correct HTML for adding a background color?</p>
+            <input type="radio" value="a" name="q5" class="q5answer" id="correct5"> <label for="a"> answer1 </label><br>
+            <input type="radio" value="b" name="q5" class="q5answer"> <label for="b"> answer2 </label><br>
+            <input type="radio" value="c" name="q5" class="q5answer"> <label for="c"> answer3 </label><br>
+            <input type="radio" value="d" name="q5" class="q5answer"> <label for="d"> answer4 </label><br>
+            <input type="submit" value="Submit" id="submit5" class="submit">
+        </form>
+    </div>
+
+    <!-- end of quiz -->
+    <div class="card" id="end">
+        <h2>End of Quiz</h2>
+        <p> Your score is: <span id="score"></span> </p>
+        <form method="post">
+            <label for="initials">Enter Initials: </label>
+            <input type="text" name="initials" id="initials">
+            <input type="submit" value="Submit" id="submitScore">
+        </form>
+    </div>
+    
+    <!--link to js -->
+    <script src="script.js"></script>
+</body>
+</html>
