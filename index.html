@@ -19,20 +19,26 @@
     <!-- intro to quiz -->
     <div class="card" id="intro">
         <h2>Introduction</h2>
-        <p> This is a quiz to test your knowledge of HTML. </p>
+        <p> This is a quiz to test your knowledge of JS.<br>
+            Do you think you have what it takes to be a JavaScript master?<br>
+            Take this quiz to find out. </p>
         <button id="start">Start Quiz</button>
     </div>
+
+    <!-- 
+        Each question is a div with a form. Each button has a data-current and data-after attribute.
+        The data-current attribute is the id of the current question. The data-after attribute is the id of the next question.
+     -->
 
     <!-- question 1-->
     <div class="card" id="question1">
         <form method="post">
             <h2>Question 1</h2>
-            <p>What is the correct HTML for adding a background color?</p>
-            <input type="radio" value="a" name="q1" class="q1answer"> <label for="a"> answer1 </label><br>
-            <input type="radio" value="b" name="q1" class="q1answer"> <label for="b"> answer2 </label><br>
-            <input type="radio" value="c" name="q1" class="q1answer" id="correct1"> <label for="c"> answer3 </label><br>
-            <input type="radio" value="d" name="q1" class="q1answer"> <label for="d"> answer4 </label><br>
-            <input type="submit" value="Submit" id="submit1" class="submit">
+            <p>What is the correct way to retrieve the last element in an array?</p>
+            <button class="answer" data-current = "question1" data-after="question2">1. array.length();</button><br>
+            <button class="answer" data-current = "question1" data-after="question2">2. array.last;</button><br>
+            <button class="answer" data-current = "question1" data-after="question2" id="correct">3. array[array.length - 1];</button><br>
+            <button class="answer" data-current = "question1" data-after="question2">4. array[i];</button><br>
         </form>
     </div>
 
@@ -40,38 +46,36 @@
     <div class="card" id="question2">
         <form method="post">
             <h2>Question 2</h2>
-            <p>What is the correct HTML for adding a background color?</p>
-            <input type="radio" value="a" name="q2" class="q2answer" id="correct2">> <label for="a"> answer1 </label><br>
-            <input type="radio" value="b" name="q2" class="q2answer"> <label for="b"> answer2 </label><br>
-            <input type="radio" value="c" name="q2" class="q2answer"> <label for="c"> answer3 </label><br>
-            <input type="radio" value="d" name="q2" class="q2answer"> <label for="d"> answer4 </label><br>
-            <input type="submit" value="Submit" id="submit2" class="submit">
+            <p>What does the following operator (===) check for?</p>
+            <button class="answer" data-current = "question2" data-after="question3" id="correct">1. data type & value</button><br>
+            <button class="answer" data-current = "question2" data-after="question3">2. value</button><br>
+            <button class="answer" data-current = "question2" data-after="question3">3. data type</button><br>
+            <button class="answer" data-current = "question2" data-after="question3">4. boolean </button><br>
         </form>
     </div>
+
 
     <!-- question 3 -->
     <div class="card" id="question3">
         <form method="post">
             <h2>Question 3</h2>
-            <p>What is the correct HTML for adding a background color?</p>
-            <input type="radio" value="a" name="q3" class="q3answer"> <label for="a"> answer1 </label><br>
-            <input type="radio" value="b" name="q3" class="q3answer"> <label for="b"> answer2 </label><br>
-            <input type="radio" value="c" name="q3" class="q3answer"> <label for="c"> answer3 </label><br>
-            <input type="radio" value="d" name="q3" class="q3answer" id="correct3"> <label for="d"> answer4 </label><br>
-            <input type="submit" value="Submit" id="submit3" class="submit">
+            <p>What is the value of x from the following code (x = 10 % 5)?</p>
+            <button class="answer" data-current = "question3" data-after="question4">1. undefined</button><br>
+            <button class="answer" data-current = "question3" data-after="question4" id="correct">2. 0</button><br>
+            <button class="answer" data-current = "question3" data-after="question4">3. 2</button><br>
+            <button class="answer" data-current = "question3" data-after="question4" >4. null</button><br>
         </form>
     </div>
 
     <!-- question 4 -->
-    <div class="card" id="question4"> 
+    <div class="card" id="question4">
         <form method="post">
             <h2>Question 4</h2>
-            <p>What is the correct HTML for adding a background color?</p>
-            <input type="radio" value="a" name="q4" class="q4answer"> <label for="a"> answer1 </label><br>
-            <input type="radio" value="b" name="q4" class="q4answer"> <label for="b"> answer2 </label><br>
-            <input type="radio" value="c" name="q4" class="q4answer" id="correct4"> <label for="c"> answer3 </label><br>
-            <input type="radio" value="d" name="q4" class="q4answer"> <label for="d"> answer4 </label><br>
-            <input type="submit" value="Submit" id="submit4" class="submit">
+            <p>Which data type does JavaScript accept?</p>
+            <button class="answer" data-current = "question4" data-after="question5">1. booleans</button><br>
+            <button class="answer" data-current = "question4" data-after="question5" >2. numbers</button><br>
+            <button class="answer" data-current = "question4" data-after="question5">3. strings</button><br>
+            <button class="answer" data-current = "question4" data-after="question5" id="correct">4. all of the above</button><br>
         </form>
     </div>
 
@@ -79,12 +83,11 @@
     <div class="card" id="question5">
         <form method="post">
             <h2>Question 5</h2>
-            <p>What is the correct HTML for adding a background color?</p>
-            <input type="radio" value="a" name="q5" class="q5answer" id="correct5"> <label for="a"> answer1 </label><br>
-            <input type="radio" value="b" name="q5" class="q5answer"> <label for="b"> answer2 </label><br>
-            <input type="radio" value="c" name="q5" class="q5answer"> <label for="c"> answer3 </label><br>
-            <input type="radio" value="d" name="q5" class="q5answer"> <label for="d"> answer4 </label><br>
-            <input type="submit" value="Submit" id="submit5" class="submit">
+            <p>The follwing code (!expression1 || !expression2) is true if....</p>
+            <button class="answer" data-current = "question5" data-after="end">1. expression1 and expression2 are false</button><br>
+            <button class="answer" data-current = "question5" data-after="end" id="correct">2. expression1 or expression2 are false</button><br>
+            <button class="answer" data-current = "question5" data-after="end">3. only expression1 is true</button><br>
+            <button class="answer" data-current = "question5" data-after="end">4. only expression2 is false</button><br>
         </form>
     </div>
 
@@ -92,11 +95,21 @@
     <div class="card" id="end">
         <h2>End of Quiz</h2>
         <p> Your score is: <span id="score"></span> </p>
-        <form method="post">
-            <label for="initials">Enter Initials: </label>
-            <input type="text" name="initials" id="initials">
-            <input type="submit" value="Submit" id="submitScore">
+        <form>
+            <label>Enter Initials: </label>
+            <input id="initials">
+            <button id="submitScore">Submit Score</button>
         </form>
+    </div>
+
+    <!-- list of highscores -->
+    <div class="card" id="highScoresList">
+        <h2>Highscores</h2>
+        <div id="highscores">
+            <ul id="highscoreList"></ul>
+        </div>
+        <button id="goBackButton">Go Back</button>
+        <button id="clearButton">Clear Highscores</button>
     </div>
     
     <!--link to js -->

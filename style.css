@@ -1,3 +1,7 @@
+body{
+    background-color: aqua;
+}
+
 /* stylyzing the header */
 .header{
     width: 100%;
@@ -7,7 +11,9 @@
     overflow: hidden;
     text-align: center;
     font-weight: bold;
+    font-size: 19px;
     border-bottom: 5px solid #f1f1f1;
+    background-color: yellow;
 }
 
 /* stylizing the cards for the intro and the questions
@@ -22,8 +28,13 @@ by default the cards are hidden and the intro is shown
     text-align: center;
     border-bottom: 5px solid #f1f1f1;
     display: none;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    font-size: 35px;
+    background-color: yellow;
 }
 
+/* stylizing the intro */
 #intro{
     width: 100%;
     height: 100%;
@@ -33,14 +44,12 @@ by default the cards are hidden and the intro is shown
     text-align: center;
     border-bottom: 5px solid #f1f1f1;
     display: block;
+    background-color: yellow;
 }
 
-#question1{
-    width: 100%;
-    height: 100%;
-    background: white;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    border-bottom: 5px solid #f1f1f1;
+/* setting the start, answer, and submit score buttons*/
+.answer, #start, #submitScore, #goBackButton, #clearButton{
+    font-size: 25px;
+    background-color: blueviolet;
+    margin: 0;
 }
