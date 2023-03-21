@@ -7,7 +7,7 @@ The user is able to save their highscore and check the heigh score list.
 
 ![scrrenshot](./images/websiteSS.JPG)
 
-## Link to webpage: https://josephteklu.github.io/Coding-Quiz
+## Link to webpage: https://josephteklu.github.io/Code-Quiz
 
 ## Created by Joseph Teklu
 
